@@ -1,1 +1,123 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 59.99,
+    "category": "Electronics",
+    "description": "Enjoy clear audio and a comfortable fit with these wireless headphones. Ideal for music, calls, and everyday listening.",
+    "imageUrl": "./images/product1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Classic Backpack",
+    "price": 39.99,
+    "category": "Accessories",
+    "description": "Keep your essentials organized with a spacious, durable backpack. Includes a padded laptop compartment and adjustable straps.",
+    "imageUrl": "./images/product2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Stainless Steel Water Bottle",
+    "price": 24.99,
+    "category": "Home & Lifestyle",
+    "description": "Stay hydrated with a reusable insulated water bottle. Its leak-resistant lid makes it convenient for travel and daily use.",
+    "imageUrl": "./images/product3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Cotton T-Shirt",
+    "price": 19.99,
+    "category": "Clothing",
+    "description": "A soft, breathable cotton T-shirt with a relaxed fit. Easy to pair with your favorite everyday outfits.",
+    "imageUrl": "./images/product4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "LED Desk Lamp",
+    "price": 34.99,
+    "category": "Home & Office",
+    "description": "Light up your workspace with an adjustable LED desk lamp. Multiple brightness settings help you find comfortable lighting.",
+    "imageUrl": "./images/product5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Yoga Mat",
+    "price": 29.99,
+    "category": "Fitness",
+    "description": "Add cushioning to your workouts with this lightweight yoga mat. Its textured surface provides grip during stretching and exercise.",
+    "imageUrl": "./images/product6.jpg"
+  },
+  {
+  "id": 7,
+    "name": "Portable Bluetooth Speaker",
+    "price": 44.99,
+    "category": "Electronics",
+    "description": "Take your favorite music anywhere with this compact Bluetooth speaker. Its rechargeable battery makes it convenient for daily use.",
+    "imageUrl": "./images/product7.jpg"
+  
+  },
+  {
+    "id": 8,
+    "name": "Running Shoes",
+    "price": 69.99,
+    "category": "Footwear",
+    "description": "Stay comfortable on walks and runs with lightweight, cushioned shoes. Breathable fabric helps keep your feet cool.",
+    "imageUrl": "./images/product8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Ceramic Coffee Mug",
+    "price": 14.99,
+    "category": "Kitchen",
+    "description": "Enjoy your favorite hot drink in this classic ceramic mug. Its comfortable handle makes it an everyday essential.",
+    "imageUrl": "./images/product9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Wireless Mouse",
+    "price": 22.99,
+    "category": "Electronics",
+    "description": "Navigate your computer with a compact wireless mouse. Its comfortable shape is suitable for work or studying.",
+    "imageUrl": "./images/product10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Fleece Throw Blanket",
+    "price": 27.99,
+    "category": "Home & Lifestyle",
+    "description": "Get cozy with a soft, lightweight fleece blanket. Perfect for relaxing on the couch or adding warmth to your bed.",
+    "imageUrl": "./images/product11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Resistance Band Set",
+    "price": 18.99,
+    "category": "Fitness",
+    "description": "Add variety to your workouts with resistance bands in multiple strengths. Their compact size makes them easy to store and carry.",
+    "imageUrl": "./images/product12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Hardcover Notebook",
+    "price": 12.99,
+    "category": "Office Supplies",
+    "description": "Keep your notes and ideas together in a durable hardcover notebook. Lined pages provide plenty of space for class notes or journaling.",
+    "imageUrl": "./images/product13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Adjustable Phone Stand",
+    "price": 15.99,
+    "category": "Accessories",
+    "description": "Keep your phone upright for video calls, studying, or watching videos. The adjustable angle helps you find a comfortable view.",
+    "imageUrl": "./images/product14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Digital Alarm Clock",
+    "price": 21.99,
+    "category": "Home & Lifestyle",
+    "description": "Stay on schedule with an easy-to-read digital alarm clock. Features adjustable brightness and a convenient snooze button.",
+    "imageUrl": "./images/product15.jpg"
+  }
+]

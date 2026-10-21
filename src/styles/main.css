@@ -1,1 +1,236 @@
+* {
+  box-sizing: border-box;
+}
 
+/* reusable colors  */
+:root {
+  --space: #101923;
+  --panel: #1b2935;
+  --cream: #f6eddc;
+  --muted: #bdc7cb;
+  --sun: #ffad66; 
+  --teal: #8ac9bd; 
+  --border: #425563; 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--cream);
+  background-color: var(--space);
+}
+
+a {
+  color: var(--teal);
+}
+
+a:hover {
+  color: var(--sun);
+}
+
+/* nav area */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 6%;
+  background-color: var(--space);
+  border-bottom: 1px solid var(--border);
+}
+
+header > a {
+  color: var(--sun);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: var(--cream);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: var(--sun);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* little white circles that suppose to look like stars */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 100px 24px;
+  text-align: center;
+  background-color: var(--space);
+  background-image:
+    radial-gradient(circle at 12% 25%, #f6eddc 1px, transparent 2px),
+    radial-gradient(circle at 83% 18%, #f6eddc 1px, transparent 2px),
+    radial-gradient(circle at 26% 78%, #8ac9bd 1px, transparent 2px),
+    radial-gradient(circle at 91% 72%, #f6eddc 1px, transparent 2px),
+    radial-gradient(circle at 63% 12%, #f6eddc 1px, transparent 2px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* glowly orange circle, its suppose to be a sun */
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 260px;
+  height: 260px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 173, 102, 0.16),
+    rgba(255, 173, 102, 0.05) 65%,
+    transparent 70%
+  );
+  box-shadow: 0 0 100px rgba(255, 173, 102, 0.08);
+}
+
+.hero > p:first-child {
+  color: var(--teal);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 800px;
+  margin: 18px auto;
+  color: var(--sun);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.15;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 16px auto;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 28px;
+  color: var(--space);
+  background-color: var(--sun);
+  border: 2px solid var(--sun);
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+  color: var(--sun);
+  background-color: var(--space);
+}
+
+/* home pagee */
+.introduction,
+.categories {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.introduction p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+h2 {
+  color: var(--cream);
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 28px 0;
+}
+
+.category-card {
+  padding: 28px;
+  text-align: left;
+  background-color: var(--panel);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--teal);
+  border-radius: 6px;
+}
+
+.category-card h3 {
+  margin-top: 0;
+  color: var(--sun);
+}
+
+.category-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.categories > a {
+  font-weight: bold;
+  text-underline-offset: 5px;
+}
+
+/* outlines for buttons when hovering */
+a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 5px;
+}
+
+/* footer */
+footer {
+  margin-top: 32px;
+  padding: 28px 24px;
+  color: var(--muted);
+  background-color: var(--panel);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+/* mobile dimensions  */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 70px 24px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

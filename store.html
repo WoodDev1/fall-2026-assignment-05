@@ -1,1 +1,57 @@
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everyday Orbit | Store</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html">Everyday Orbit</a>
+
+      <nav aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./store.html" aria-current="page">Store</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p>Supplies for your daily orbit</p>
+        <h1>Find your next discovery.</h1>
+        <p>
+          Explore our collection of everyday essentials,
+          from home comforts to gear for your next adventure.
+        </p>
+      </section>
+
+      <section class="store-section" aria-labelledby="catalog-heading">
+        <h2 id="catalog-heading">Explore the Collection</h2>
+
+        <div id="product-grid" class="product-grid"></div>
+
+        <nav class="pagination" aria-label="Product pages">
+          <button id="previous-button" type="button" disabled>
+            Previous
+          </button>
+
+          <p id="page-indicator" aria-live="polite">Page 1 of 3</p>
+
+          <button id="next-button" type="button" disabled>
+            Next
+          </button>
+        </nav>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Everyday Orbit. All rights reserved.</p>
+      <p>Your everyday essentials, all in one orbit.</p>
+    </footer>
+  </body>
+</html>

@@ -234,3 +234,153 @@ footer p {
     transition: none;
   }
 }
+
+/* abotu page */
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.about-section + .about-section {
+  border-top: 1px solid var(--border);
+}
+
+.about-section h2 {
+  margin-top: 0;
+  color: var(--sun);
+}
+
+.about-section p,
+.about-section address {
+  color: var(--muted);
+}
+
+.about-section address {
+  font-style: normal;
+}
+
+/* store section*/
+.store-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.store-section > h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* cards for products */
+.product-card {
+  overflow: hidden;
+  background-color: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.product-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  padding: 16px;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.product-details {
+  padding: 24px;
+}
+
+.product-category {
+  display: inline-block;
+  padding: 4px 10px;
+  color: var(--teal);
+  border: 1px solid var(--teal);
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.product-card h3 {
+  margin: 14px 0 8px;
+  line-height: 1.3;
+}
+
+.product-price {
+  margin: 8px 0;
+  color: var(--sun);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.product-description {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+/* controls  for buttons */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  color: var(--space);
+  background-color: var(--sun);
+  border: 2px solid var(--sun);
+  border-radius: 6px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pagination button:hover:not(:disabled) {
+  color: var(--sun);
+  background-color: var(--space);
+}
+
+.pagination button:disabled {
+  color: var(--muted);
+  background-color: var(--panel);
+  border-color: var(--border);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pagination button:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 5px;
+}
+
+#page-indicator {
+  margin: 0;
+  color: var(--cream);
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination {
+    gap: 12px;
+  }
+}
